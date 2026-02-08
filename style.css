@@ -13,3 +13,11 @@ footer a { color:#fff; text-decoration:none; margin:0 5 px; }
 @ media(max-width:768 px){
 section { padding:15 px; margin:10 px; }
 nav a { display:block; margin:5 px 0; }
+footer {
+  position: relative;
+  z-index: 10;
+}
+footer a {
+  pointer-events: auto;
+  cursor: pointer;
+}
