@@ -207,3 +207,60 @@ footer .social-links a:hover {
     align-items: center;
   }
 }
+#taro-gp-cards h2 {
+  text-align: center;
+  margin-top: 30px;
+  color: #111;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#taro-gp-cards .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+#taro-gp-cards .part-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 12px 15px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#taro-gp-cards .part-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: contain;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 8px;
+}
+
+#taro-gp-cards .part-card h3 {
+  font-size: 18px;
+  color: #222;
+  margin-bottom: 6px;
+}
+
+#taro-gp-cards .part-card p {
+  font-size: 16px;
+  color: #444;
+}
+
+#taro-gp-cards .part-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+  #taro-gp-cards .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
