@@ -380,3 +380,69 @@ footer .social-links a:hover {
     align-items: center;
   }
 }
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+  color: #111;
+}
+
+header {
+  background: #005bbb;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+header p {
+  margin: 5px 0 0 0;
+  font-size: 16px;
+}
+
+#search-section {
+  text-align: center;
+  margin: 30px 0;
+}
+
+#partSearch {
+  width: 60%;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+#partsList {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#partsList li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  font-size: 16px;
+  display: block;
+}
+
+#partsList li.hidden {
+  display: none;
+}
+
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background: #005bbb;
+  color: white;
+  margin-top: 30px;
+}
