@@ -156,3 +156,54 @@ footer .social-links a:hover {
     align-items: center;
   }
 }
+/* R15 V3 Parts Card Layout */
+#r15-parts-cards h2 {
+  text-align: center;
+  margin-top: 30px;
+  color: #111;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#r15-parts-cards .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+#r15-parts-cards .part-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 12px 15px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#r15-parts-cards .part-card h3 {
+  font-size: 18px;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+#r15-parts-cards .part-card p {
+  font-size: 16px;
+  color: #444;
+}
+
+#r15-parts-cards .part-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #r15-parts-cards .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
