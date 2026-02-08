@@ -1,101 +1,180 @@
-* { margin:0; padding:0; box-sizing:border-box; }
-body { font-family: Arial, sans-serif; line-height:1.6; background:#f5f5f5; }
-header { background:#111; color:#fff; text-align:center; padding:20 px; }
-header h1 { margin-bottom:5 px; }
-header p { font-size:14 px; color:#ddd; }
-nav { text-align:center; margin:15 px 0; }
-nav a { margin:0 10 px; text-decoration:none; color:#111; font-weight:bold; }
-section { background:#fff; margin:15 px auto; padding:20 px; border-radius:8 px; max-width:900 px; }
-h1, h2 { margin-bottom:10 px; color:#333; }
-footer { text-align:center; padding:15 px; background:#222; color:#fff; margin-top:15 px; }
-footer a { color:#fff; text-decoration:none; margin:0 5 px; }
-.bike-img { width:100 %; max-width:400 px; border-radius:8 px; margin:10 px 0; }
-@ media(max-width:768 px){
-section { padding:15 px; margin:10 px; }
-nav a { display:block; margin:5 px 0; }
+/* ==========================
+   Global Styles
+========================== */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+h1, h2, h3 {
+  margin: 0.5em 0;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ==========================
+   Navbar
+========================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0d6efd;
+  color: #fff;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .nav-links li a {
+  color: #fff;
+  font-weight: 500;
+}
+
+.navbar .nav-links li a:hover {
+  text-decoration: underline;
+}
+
+/* ==========================
+   Bike Parts Cards
+========================== */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.part-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.part-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.part-card h3 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.part-card p {
+  font-size: 16px;
+  color: #333;
+}
+
+.part-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* ==========================
+   Modifications Cards
+========================== */
+.mod-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.mod-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  width: 220px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.mod-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.mod-card h3 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.mod-card p {
+  font-size: 15px;
+  color: #333;
+}
+
+.mod-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* ==========================
+   Footer
+========================== */
 footer {
-  position: relative;
-  z-index: 10;
-}
-footer a {
-  pointer-events: auto;
-  cursor: pointer;
-}
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.part-card {
-  background: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 15px;
-  width: 200px;
+  background: #0d6efd;
+  color: #fff;
   text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
+  padding: 20px 10px;
+  margin-top: 40px;
 }
 
-.part-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 10px;
+footer .social-links a {
+  color: #fff;
+  margin: 0 10px;
+  font-weight: bold;
 }
 
-.part-card h3 {
-  font-size: 18px;
-  margin: 5px 0;
+footer .social-links a:hover {
+  text-decoration: underline;
 }
 
-.part-card p {
-  font-size: 16px;
-  color: #333;
-}
-
-.part-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-}
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.part-card {
-  background: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 15px;
-  width: 200px;
-  text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.part-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-
-.part-card h3 {
-  font-size: 18px;
-  margin: 5px 0;
-}
-
-.part-card p {
-  font-size: 16px;
-  color: #333;
-}
-
-.part-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+/* ==========================
+   Responsive Design
+========================== */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .card-container, .mod-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
