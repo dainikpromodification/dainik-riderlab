@@ -27,37 +27,61 @@ a {
    Navbar
 ========================== */
 .navbar {
+/* Navbar */
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #0d6efd;
+  background: #0d6efd; /* নীল ব্যাকগ্রাউন্ড, চাইলে পরিবর্তন করুন */
   color: #fff;
   padding: 10px 20px;
   position: sticky;
   top: 0;
   z-index: 100;
 }
-
 .navbar .logo {
   font-size: 20px;
   font-weight: bold;
 }
-
 .navbar .nav-links {
   list-style: none;
   display: flex;
   gap: 20px;
 }
-
 .navbar .nav-links li a {
   color: #fff;
   font-weight: 500;
 }
-
 .navbar .nav-links li a:hover {
   text-decoration: underline;
 }
+/* Banner Section */
+#banner {
+  position: relative;
+  width: 100%;
+  height: 250px; /* চাইলে বাড়াতে পারেন */
+  background: url('images/banner.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
 
+#banner .banner-overlay {
+  background-color: rgba(0, 0, 0, 0.4); /* ছবির উপর লেয়ার, লেখা স্পষ্ট রাখতে */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#banner h1 {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+}
 /* ==========================
    Bike Parts Cards
 ========================== */
