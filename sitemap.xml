@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <!-- মূল হোমপেজ -->
+   <url>
+      <loc>https://dainikpromodification.github.io/dainik-riderlab/</loc>
+   </url>
+
+   <!-- পার্টস লিস্ট পেজ (যদি আলাদা পেজ থাকে) -->
+   <!-- উদাহরণ: -->
+   <!--
+   <url>
+      <loc>https://dainikpromodification.github.io/dainik-riderlab/parts.html</loc>
+   </url>
+   -->
+</urlset>
