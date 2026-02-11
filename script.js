@@ -105,39 +105,23 @@ const bikeParts = [
     }
 ];
 const products = [
-  {
-    name: "Yamaha R15 V3 Indo 3 Part Handle Bar",
-    price: 5880,
-    model: "R15 V3",
-    origin: "Indonesia",
-    image: "r15-v3-3part-handlebar-indo.jpg"
-  },
-  {
-    name: "Yamaha R15 V3 Chain Sprocket Set Indo",
-    price: 6394.5,
-    model: "R15 V3",
-    origin: "Indonesia",
-    image: "r15-v3-chain-sprocket-indo.jpg"
-  },
-  {
-    name: "Yamaha R15 V3 Clutch Lever Indo",
-    price: 525,
-    model: "R15 V3",
-    origin: "Indonesia",
-    image: "r15-v3-clutch-lever-indo.jpg"
-  },
-  {
-    name: "Yamaha R15 V3 ECU",
-    price: 13650,
-    model: "R15 V3",
-    origin: "Original",
-    image: "r15-v3-ecu.jpg"
-  },
-  {
-    name: "Yamaha R15 V3 Headlamp Indo",
-    price: 18532.5,
-    model: "R15 V3",
-    origin: "Indonesia",
-    image: "r15-v3-headlamp-indo.jpg"
-  }
+
+{
+  name: "Yamaha R15 V3 Headlamp Indo",
+  price: 19000,
+  image: "images/r15v3-headlamp.jpg"
+},
+
+{
+  name: "Yamaha R15 V3 ECU",
+  price: 13800,
+  image: "images/r15v3-ecu.jpg"
+},
+
+{
+  name: "Yamaha R15 V2 Lock Set",
+  price: 2800,
+  image: "images/r15v2-lock.jpg"
+}
+
 ];
